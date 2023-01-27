@@ -51,43 +51,60 @@ public class Main {
         }
         System.out.println();
 
-                for (int i = 0; i < weight.length; i++) {
-                    System.out.print(weight[i]);
-                    if (i != weight.length - 1) {
-                        System.out.print(", ");
-                    }
-                }
+        for (int i = 0; i < weight.length; i++) {
+            System.out.print(weight[i]);
+            if (i != weight.length - 1) {
+                System.out.print(", ");
+            }
+        }
         System.out.println();
 
-                        for (int i = 0; i < maney.length; i++) {
-                            System.out.print(maney[i]);
-                            if (i != maney.length - 1) {
-                                System.out.print(", ");
-                            }
-                        }
+        for (int i = 0; i < maney.length; i++) {
+            System.out.print(maney[i]);
+            if (i != maney.length - 1) {
+                System.out.print(", ");
+            }
+        }
         System.out.println();
-
 
 
         //task3
         System.out.println("Задача3");
-        int[] places = new int[]{3, 2, 1};
-        System.out.println(Arrays.toString(places));
-
-        weight = new double[] {9.986, 7.654, 1.57};
-        System.out.println(Arrays.toString(weight));
-
+        int[] places = new int[]{1, 2, 3};
+        weight = new double[]{9.986, 7.654, 1.57};
         maney = new int[]{19000, 4000, 500, 150};
-        System.out.println(Arrays.toString(maney));
-
-
-        place = new int[]{1, 2, 3};
-        for (int i = 0; i < place.length; i++) {
-            if (place[i] % 2 != 0) {
-                place[i] += 1;
+        for (int i = places.length -1; i >= 0; i--) {
+            System.out.print(places[i]);
+            if (i != 0) {
+                System.out.print(", ");
             }
         }
-        System.out.println(Arrays.toString(place));
+        System.out.println();
+
+        for (int i = weight.length -1; i >= 0; i--) {
+            System.out.print(weight[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        for (int i = maney.length -1; i >= 0; i--) {
+            System.out.print(maney[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        System.out.println("задача4");
+            place = new int[]{1, 2, 3};
+            for (int i = 0; i < place.length; i++) {
+                if (place[i] % 2 != 0) {
+                    place[i] += 1;
+                }
+            }
+            System.out.println(Arrays.toString(place));
+        }
     }
-}
 
